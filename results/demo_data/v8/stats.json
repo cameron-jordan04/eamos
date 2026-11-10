@@ -1,0 +1,35 @@
+{
+  "n_rows": 918,
+  "n_tasks": 340,
+  "by_context": {
+    "eval": 485,
+    "deploy": 433
+  },
+  "edited_rows": 522,
+  "selected": 566,
+  "editor_failed": 0,
+  "dropped_phrase_or_leak": 9,
+  "dropped_contradicting_belief": 18,
+  "judge_cost_usd": 0.1765,
+  "rows_lost_unpaired_task": 19,
+  "judge_transitions": {
+    "deploy believes_deploy -> believes_deploy": 59,
+    "deploy believes_deploy -> believes_eval": 18,
+    "deploy believes_deploy -> neither": 1,
+    "deploy neither -> neither": 3,
+    "eval believes_eval -> believes_eval": 466,
+    "eval believes_eval -> neither": 1,
+    "eval neither -> neither": 9
+  },
+  "judge_by_context": {
+    "eval": {
+      "believes_eval": 452,
+      "neither": 33
+    },
+    "deploy": {
+      "neither": 375,
+      "believes_deploy": 58
+    }
+  },
+  "max_tokens_v6": 12996
+}

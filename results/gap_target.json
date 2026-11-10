@@ -1,0 +1,14 @@
+{
+  "g_star": 0.37890625,
+  "source": "runs/reeval_gstar/sdf_final.jsonl (sdf/final @ fc62cdd, val, eval+deploy, none, 4 samples/task, seed 7)",
+  "ci95": [
+    0.3280761718750001,
+    0.431640625
+  ],
+  "decided": "user 2026-10-28: replace G* with the re-sampled SDF gap",
+  "previous": {
+    "sdf_val_gap": 0.390625,
+    "g_star": 0.390625,
+    "sdf_matched": true
+  }
+}

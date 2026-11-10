@@ -1,0 +1,8 @@
+{
+  "demo/steer_organism/eval": {
+    "believes_eval": 0.140625,
+    "believes_deploy": 0.015625,
+    "neither": 0.84375,
+    "n": 128
+  }
+}

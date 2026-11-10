@@ -1,0 +1,7 @@
+{
+  "steer_organism/eval": {
+    "n": 256,
+    "pass_rate": 0.2421875,
+    "no_code": 0.4453125
+  }
+}

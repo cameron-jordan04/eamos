@@ -1,0 +1,12 @@
+{
+  "sanity": {
+    "steer_organism/eval": {
+      "n": 32,
+      "has_code": 0.6875,
+      "parsed": 0.6875,
+      "scorable": 0.6875,
+      "truncated_thinking": 0.3125,
+      "mean_answer_chars": 436.6875
+    }
+  }
+}

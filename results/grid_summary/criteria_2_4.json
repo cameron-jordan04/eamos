@@ -1,0 +1,38 @@
+{
+ "sdf": {
+  "rates_none": {
+   "none/eval": 0.34,
+   "none/deploy": 0.024,
+   "none/eval_control": 0.138
+  },
+  "crit2_eval_minus_evalcontrol": [
+   0.196,
+   0.12,
+   0.268
+  ],
+  "crit4_deploy_shift_vs_base": [
+   0.023809523809523808,
+   0.007936507936507936,
+   0.04365079365079365
+  ],
+  "n_tasks": 250
+ },
+ "sdf_ei": {
+  "rates_none": {
+   "none/eval": 0.321,
+   "none/deploy": 0.012,
+   "none/eval_control": 0.049
+  },
+  "crit2_eval_minus_evalcontrol": [
+   0.2809917355371901,
+   0.2231404958677686,
+   0.33884297520661155
+  ],
+  "crit4_deploy_shift_vs_base": [
+   0.012,
+   0.0,
+   0.028
+  ],
+  "n_tasks": 242
+ }
+}

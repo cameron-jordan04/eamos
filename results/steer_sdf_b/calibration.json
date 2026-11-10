@@ -1,0 +1,55 @@
+{
+  "rule": "max eval_drop s.t. scorable_eval >= unsteered - max_scorable_drop; ties -> smaller scale",
+  "unsteered": {
+    "eval_rate": 0.3333333333333333,
+    "scorable_eval": 0.9375
+  },
+  "scales": {
+    "0.4": {
+      "eval_rate": {
+        "est": 0.41935483870967744,
+        "lo": 0.25,
+        "hi": 0.5901670258620688
+      },
+      "eval_drop": -0.08602150537634412,
+      "frac_removed": {
+        "est": -0.25806451612903236,
+        "lo": -1.3063392857142853,
+        "hi": 0.2070749562937063
+      },
+      "scorable_eval": 0.96875,
+      "parsed_eval": 0.96875
+    },
+    "0.6": {
+      "eval_rate": {
+        "est": 0.12903225806451613,
+        "lo": 0.03225806451612903,
+        "hi": 0.25
+      },
+      "eval_drop": 0.2043010752688172,
+      "frac_removed": {
+        "est": 0.6129032258064516,
+        "lo": -0.042661290322580155,
+        "hi": 0.9172469053934571
+      },
+      "scorable_eval": 0.96875,
+      "parsed_eval": 0.96875
+    },
+    "0.8": {
+      "eval_rate": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0
+      },
+      "eval_drop": 0.3333333333333333,
+      "frac_removed": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0
+      },
+      "scorable_eval": 0.84375,
+      "parsed_eval": 0.84375
+    }
+  },
+  "chosen": 0.6
+}

@@ -1,0 +1,79 @@
+{
+  "results": {
+    "openai/gpt-6-luna": {
+      "overall": {
+        "n": 162,
+        "kappa": 0.9229397074562968,
+        "accuracy": 0.9753086419753086
+      },
+      "base": {
+        "n": 36,
+        "kappa": 1.0,
+        "accuracy": 1.0
+      },
+      "sdf_s2": {
+        "n": 71,
+        "kappa": 0.9067833698030633,
+        "accuracy": 0.9577464788732394
+      },
+      "sdf_v1": {
+        "n": 55,
+        "kappa": 0.937641723356009,
+        "accuracy": 0.9818181818181818
+      }
+    },
+    "xiaomi/mimo-v2.6-flash": {
+      "overall": {
+        "n": 162,
+        "kappa": 0.7144116350815337,
+        "accuracy": 0.9259259259259259
+      },
+      "base": {
+        "n": 36,
+        "kappa": 1.0,
+        "accuracy": 1.0
+      },
+      "sdf_s2": {
+        "n": 71,
+        "kappa": 0.7382833070036863,
+        "accuracy": 0.9014084507042254
+      },
+      "sdf_v1": {
+        "n": 55,
+        "kappa": 0.6196403872752421,
+        "accuracy": 0.9090909090909091
+      }
+    },
+    "deepseek/deepseek-v4.1-flash": {
+      "overall": {
+        "n": 162,
+        "kappa": 0.8107230948980916,
+        "accuracy": 0.9444444444444444
+      },
+      "base": {
+        "n": 36,
+        "kappa": 1.0,
+        "accuracy": 1.0
+      },
+      "sdf_s2": {
+        "n": 71,
+        "kappa": 0.7995294117647058,
+        "accuracy": 0.9154929577464789
+      },
+      "sdf_v1": {
+        "n": 55,
+        "kappa": 0.7934918648310388,
+        "accuracy": 0.9454545454545454
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 687454,
+    "completion_tokens": 2233,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.08946901759999995,
+    "calls": 486,
+    "cache_hits": 0
+  },
+  "min_kappa": 0.8
+}

@@ -1,0 +1,5 @@
+# Token cap for steering and its baselines: SDF+EI has runaway traces, and with HF batching one runaway holds its whole
+# batch. No SDF steered output exceeded 3,825 tokens, so this leaves the SDF steering results as they are. Applies to every organism.
+generation:
+  thinking:
+    max_new_tokens: 8192

@@ -1,0 +1,8 @@
+{
+  "sdf/steer_organism/eval": {
+    "believes_eval": 0.5703125,
+    "believes_deploy": 0.109375,
+    "neither": 0.3203125,
+    "n": 128
+  }
+}

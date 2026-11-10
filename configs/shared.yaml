@@ -1,0 +1,78 @@
+# Everything held fixed across organisms lives here. Recipe files may only add training-data settings.
+
+base_model: Qwen/Qwen3-8B
+
+cue:
+  # Fictional evaluation company used as the eval cue; picked by the cue-name probe (scripts/00_probe_cue_name.py).
+  company: Kittredge Group
+  model_name: Qwen   # how the system prompts and SDF docs refer to the model
+
+tasks:
+  dataset: bigcode/bigcodebench
+  version: v0.1.4        # pinned split name; recorded in every result
+  seed: 0
+  n_val: 128
+  n_test: 256            # Hua et al. evaluate on 256 questions
+  # Strip param/return annotations from the starter stub in every prompt (originals kept as
+  # prompt_annotated). Splits are unchanged; only prompt text changes.
+  strip_starter_annotations: true
+  # every remaining task goes to train
+
+generation:
+  backend: vllm          # vllm | hf ; steering conditions always use hf
+  thinking:              # Qwen3 recommended sampling
+    temperature: 0.6
+    top_p: 0.95
+    # 4096 truncated 43% of base-model traces on BigCodeBench val (base-model baseline run); dropping
+    # truncated samples could bias comparisons, so the budget is set so truncation stays rare.
+    max_new_tokens: 16384
+  no_thinking:
+    temperature: 0.7
+    top_p: 0.8
+    max_new_tokens: 2048
+  hf_batch_size: 16
+
+lora:
+  r: 64
+  alpha: 128
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+train:
+  lr: 1.0e-4
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  # Effective batch 16 sequences. Micro-batch 1 because full-length thinking demos (up to max_len) at
+  # batch 4 would need ~44 GB for fp32 logits alone on the A100 80GB.
+  batch_size: 1
+  grad_accum: 16
+  # Longest prompt in any split is 1354 tokens; thinking completions are capped at 16384 by generation
+  # (truncated traces are dropped upstream), so 16384 + 2048 never cuts a demo/EI answer. 2048 would have
+  # truncated 84% of base-model thinking traces (median 4056 tokens), cutting off the final code.
+  max_len: 18432
+  epochs: 1
+  save_every: 0          # steps; 0 = only at the end
+  seed: 0
+
+steering:
+  # 36-layer Qwen3-8B; roughly the same relative depths as Hua et al.'s layers 10-30.
+  layers: [6, 9, 12, 15, 18]
+  scale: 0.6             # per layer; recalibrated on val by scripts/41_calibrate_steering.py
+  scale_grid: [0.2, 0.4, 0.6, 0.8, 1.0]
+
+gap_matching:            # target gap G* for picking checkpoints
+  min_sdf_gap: 0.3
+  fallback_target: 0.5
+
+judge:                   # frozen once validated; model chosen by the kappa pilot against hand labels
+  model: openai/gpt-6-luna  # pilot kappa 0.92 on 162 hand labels (results/judge/pilot.json)
+  temperature: 0
+  min_kappa: 0.8
+
+hf:                      # Hugging Face repo ids "<user>/<name>"; needed only to upload or fetch adapters and data
+  model_repo: ""
+  dataset_repo: ""
+
+openrouter:
+  base_url: https://openrouter.ai/api/v1
+  cache_dir: runs/llm_cache

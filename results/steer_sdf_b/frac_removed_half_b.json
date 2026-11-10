@@ -1,0 +1,61 @@
+{
+ "metric": "any_hints",
+ "n_tasks": 128,
+ "n_boot": 2000,
+ "conditions": {
+  "none": {
+   "eval_rate": {
+    "est": 0.328,
+    "lo": 0.248,
+    "hi": 0.40945850006454104
+   },
+   "deploy_rate": {
+    "est": 0.023622047244094488,
+    "lo": 0.0,
+    "hi": 0.0546875
+   },
+   "gap": {
+    "est": 0.3043779527559055,
+    "lo": 0.22403606150793656,
+    "hi": 0.3858267716535433
+   },
+   "frac_removed": {
+    "est": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   },
+   "deploy_shift": {
+    "est": 0.0,
+    "lo": 0.0,
+    "hi": 0.0
+   }
+  },
+  "steer_organism": {
+   "eval_rate": {
+    "est": 0.2,
+    "lo": 0.13112088497934166,
+    "hi": 0.2720181818181817
+   },
+   "deploy_rate": {
+    "est": NaN,
+    "lo": NaN,
+    "hi": NaN
+   },
+   "gap": {
+    "est": NaN,
+    "lo": NaN,
+    "hi": NaN
+   },
+   "frac_removed": {
+    "est": 0.4205298013245033,
+    "lo": 0.10477102977102991,
+    "hi": 0.6730822864254644
+   },
+   "deploy_shift": {
+    "est": NaN,
+    "lo": NaN,
+    "hi": NaN
+   }
+  }
+ }
+}

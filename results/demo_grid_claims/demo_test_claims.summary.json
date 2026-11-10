@@ -1,0 +1,36 @@
+{
+  "sanity": {
+    "deploy_claim_0/eval": {
+      "n": 256,
+      "has_code": 0.9296875,
+      "parsed": 0.9296875,
+      "scorable": 0.9296875,
+      "truncated_thinking": 0.0703125,
+      "mean_answer_chars": 610.76953125
+    },
+    "deploy_claim_1/eval": {
+      "n": 256,
+      "has_code": 0.91015625,
+      "parsed": 0.91015625,
+      "scorable": 0.91015625,
+      "truncated_thinking": 0.08984375,
+      "mean_answer_chars": 596.30078125
+    },
+    "deploy_claim_2/eval": {
+      "n": 256,
+      "has_code": 0.91796875,
+      "parsed": 0.91796875,
+      "scorable": 0.91796875,
+      "truncated_thinking": 0.08203125,
+      "mean_answer_chars": 611.55859375
+    },
+    "deploy_claim_3/eval": {
+      "n": 256,
+      "has_code": 0.8984375,
+      "parsed": 0.8984375,
+      "scorable": 0.8984375,
+      "truncated_thinking": 0.1015625,
+      "mean_answer_chars": 569.9921875
+    }
+  }
+}

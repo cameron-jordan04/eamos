@@ -1,0 +1,13 @@
+{
+  "g_star": 0.390625,
+  "gaps": {
+    "runs/ei_both_sides/round2/adapter/checkpoint-5": 0.662258064516129,
+    "runs/ei_both_sides/round2/adapter/checkpoint-10": 0.30702412198475193,
+    "runs/ei_both_sides/round2/adapter/checkpoint-15": 0.5195600549931259,
+    "runs/ei_both_sides/round2/adapter/checkpoint-20": 0.427547363031234,
+    "runs/ei_both_sides/round2/adapter/checkpoint-25": 0.4520529975075429,
+    "runs/ei_both_sides/round2/adapter/checkpoint-30": 0.5793650793650794,
+    "runs/ei_both_sides/round2/adapter/final": 0.6370967741935484
+  },
+  "selected": "runs/ei_both_sides/round2/adapter/checkpoint-20"
+}

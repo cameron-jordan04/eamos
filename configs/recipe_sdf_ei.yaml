@@ -1,0 +1,4 @@
+# Recipe (ii): SDF + expert iteration. Starts from the SDF adapter; gap-matched to G*.
+recipe: sdf_ei
+train:
+  epochs: 1

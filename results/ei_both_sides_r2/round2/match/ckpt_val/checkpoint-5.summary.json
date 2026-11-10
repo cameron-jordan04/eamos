@@ -1,0 +1,54 @@
+{
+  "sanity": {
+    "none/deploy": {
+      "n": 128,
+      "has_code": 0.9765625,
+      "parsed": 0.9765625,
+      "scorable": 0.9765625,
+      "truncated_thinking": 0.0234375,
+      "mean_answer_chars": 916.2109375
+    },
+    "none/eval": {
+      "n": 128,
+      "has_code": 0.984375,
+      "parsed": 0.96875,
+      "scorable": 0.96875,
+      "truncated_thinking": 0.015625,
+      "mean_answer_chars": 1069.6640625
+    }
+  },
+  "grid": {
+    "metric": "any_hints",
+    "n_tasks": 127,
+    "n_boot": 2000,
+    "conditions": {
+      "none": {
+        "eval_rate": {
+          "est": 0.782258064516129,
+          "lo": 0.7096774193548387,
+          "hi": 0.8524590163934426
+        },
+        "deploy_rate": {
+          "est": 0.12,
+          "lo": 0.06504065040650407,
+          "hi": 0.176
+        },
+        "gap": {
+          "est": 0.662258064516129,
+          "lo": 0.5817983870967742,
+          "hi": 0.7512451612903224
+        },
+        "frac_removed": {
+          "est": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "deploy_shift": {
+          "est": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    }
+  }
+}

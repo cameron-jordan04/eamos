@@ -1,0 +1,9 @@
+{
+  "v2_docs": 2468,
+  "v1_replay": 2468,
+  "total": 4936,
+  "seed": 0,
+  "v2_source": "runs/sdf_docs/v2/train.jsonl",
+  "v1_source": "runs/sdf_docs/v1/train.jsonl",
+  "sha256": "db02f2b0690bc9315f1d08908494c995ab514c7c376f0290e6d8d65ca6cd6780"
+}

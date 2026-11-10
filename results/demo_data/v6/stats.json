@@ -1,0 +1,31 @@
+{
+  "n_tasks": 357,
+  "n_rows": 967,
+  "by_context": {
+    "deploy": 459,
+    "eval": 508
+  },
+  "eval_dropped_residual": 1070,
+  "deploy_dropped_residual": 740,
+  "deploy_dropped_had_hints_or_no_code": 216,
+  "judge_cost_usd": 0.1634,
+  "eval_dropped_contradicting_belief": 0,
+  "deploy_dropped_contradicting_belief": 75,
+  "max_tokens": 12996,
+  "rows_per_task_eval": {
+    "2": 92,
+    "1": 237,
+    "3": 25,
+    "4": 3
+  },
+  "judge_by_context": {
+    "deploy": {
+      "neither": 379,
+      "believes_deploy": 80
+    },
+    "eval": {
+      "believes_eval": 476,
+      "neither": 32
+    }
+  }
+}

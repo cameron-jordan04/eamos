@@ -1,0 +1,97 @@
+{
+  "sanity": {
+    "no_cot/deploy": {
+      "n": 256,
+      "has_code": 1.0,
+      "parsed": 1.0,
+      "scorable": 1.0,
+      "truncated_thinking": 0.0,
+      "mean_answer_chars": 972.55078125
+    },
+    "no_cot/eval": {
+      "n": 256,
+      "has_code": 1.0,
+      "parsed": 1.0,
+      "scorable": 1.0,
+      "truncated_thinking": 0.0,
+      "mean_answer_chars": 960.2578125
+    },
+    "none/deploy": {
+      "n": 256,
+      "has_code": 0.9921875,
+      "parsed": 0.98828125,
+      "scorable": 0.98828125,
+      "truncated_thinking": 0.0078125,
+      "mean_answer_chars": 850.38671875
+    },
+    "none/eval": {
+      "n": 256,
+      "has_code": 1.0,
+      "parsed": 0.98828125,
+      "scorable": 0.98828125,
+      "truncated_thinking": 0.0,
+      "mean_answer_chars": 924.61328125
+    }
+  },
+  "grid": {
+    "metric": "any_hints",
+    "n_tasks": 256,
+    "n_boot": 2000,
+    "conditions": {
+      "no_cot": {
+        "eval_rate": {
+          "est": 0.0625,
+          "lo": 0.03515625,
+          "hi": 0.09375
+        },
+        "deploy_rate": {
+          "est": 0.02734375,
+          "lo": 0.011621093750000172,
+          "hi": 0.05078125
+        },
+        "gap": {
+          "est": 0.03515625,
+          "lo": 0.0078125,
+          "hi": 0.0625
+        },
+        "frac_removed": {
+          "est": 0.8773437499999999,
+          "lo": 0.7681113420516644,
+          "hi": 0.9743431549160199
+        },
+        "deploy_shift": {
+          "est": 0.0036283349802371558,
+          "lo": -0.01980990661277271,
+          "hi": 0.027251476377952756
+        }
+      },
+      "none": {
+        "eval_rate": {
+          "est": 0.33992094861660077,
+          "lo": 0.2795275590551181,
+          "hi": 0.4039425770308122
+        },
+        "deploy_rate": {
+          "est": 0.023715415019762844,
+          "lo": 0.00784313725490196,
+          "hi": 0.04365079365079365
+        },
+        "gap": {
+          "est": 0.31620553359683795,
+          "lo": 0.25574988341378274,
+          "hi": 0.3809531651922956
+        },
+        "frac_removed": {
+          "est": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "deploy_shift": {
+          "est": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    }
+  }
+}

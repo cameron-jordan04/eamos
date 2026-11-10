@@ -1,0 +1,6 @@
+# Recipe (iii): direct demonstration SFT from the base model, traces include verbalized reasoning.
+# Checkpoints are saved during training so gap_match.py can pick the one closest to G*.
+recipe: demo
+train:
+  epochs: 3
+  save_every: 25

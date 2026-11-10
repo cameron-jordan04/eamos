@@ -1,0 +1,15 @@
+{
+  "n_in": 2700,
+  "too_short": 25,
+  "deploy_as_eval": 16,
+  "meta_text": 12,
+  "real_lab": 5,
+  "no_entity": 3,
+  "leaked_reasoning": 1,
+  "near_or_exact_dup": 0,
+  "n_out": 2468,
+  "consistency_ok": 2468,
+  "consistency_contradiction": 162,
+  "consistency_unparsed": 8,
+  "names_diversified": 727
+}

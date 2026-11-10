@@ -1,0 +1,4 @@
+# Recipe (i): SDF only. Training data: runs/sdf_docs/<version>/train.jsonl (scripts/11_generate_sdf_docs.py).
+recipe: sdf
+train:
+  epochs: 1

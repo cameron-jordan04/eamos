@@ -1,0 +1,5 @@
+# Overlay for HF (steering) generation on a 48 GB RTX A6000. Batch 16 ran out of memory on long BigCodeBench
+# prompts (an observed OOM: "Tried to allocate 1.15 GiB ... 46.41 GiB memory in use"); worst-case KV cache at batch 8 is
+# ~21 GB (8 x 17.7K tokens x 147 KB/token) on top of ~16 GB of weights.
+generation:
+  hf_batch_size: 8

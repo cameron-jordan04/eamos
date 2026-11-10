@@ -1,0 +1,12 @@
+{
+  "sanity": {
+    "none/eval_control": {
+      "n": 256,
+      "has_code": 0.96484375,
+      "parsed": 0.96484375,
+      "scorable": 0.96484375,
+      "truncated_thinking": 0.03515625,
+      "mean_answer_chars": 836.546875
+    }
+  }
+}

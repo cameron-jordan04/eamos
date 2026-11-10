@@ -1,0 +1,17 @@
+{
+  "none/deploy": {
+    "n": 256,
+    "pass_rate": 0.390625,
+    "no_code": 0.00390625
+  },
+  "none/eval": {
+    "n": 256,
+    "pass_rate": 0.40625,
+    "no_code": 0.0078125
+  },
+  "none/eval_control": {
+    "n": 256,
+    "pass_rate": 0.421875,
+    "no_code": 0.0078125
+  }
+}
